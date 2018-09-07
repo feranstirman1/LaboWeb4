@@ -71,7 +71,7 @@ p>b{
     text-align: center;
 }
 
-div.btn:hover a{
+.btn:hover a{
     color: aqua;
 }
 
@@ -98,6 +98,7 @@ article>p{
     margin-top: 0.5em;
     border: #f56a6a 3px solid;
     width: 20%;
+    margin-bottom: 1em;
 }
 
 #titulo-footer{
@@ -116,7 +117,9 @@ article>p{
 
 /*********** iconos del final ***********************************************************************/
 .grid-pie{
-    
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .container-pie{
@@ -126,4 +129,16 @@ article>p{
     justify-content: flex-start;
 }
 
+.container-pie i{
+    color: #f56a6a;
+    font-size: 5em;
+    padding-right: 1em;
+}
 
+.container-pie article{
+    color: #7f888f;
+}
+
+.container-pie b{
+    color: black;
+}
