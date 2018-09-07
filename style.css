@@ -1,0 +1,129 @@
+/*css de la sabecera */
+.grid-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header>b{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+header>nav{
+    display:-ms-inline-grid;
+    grid-template-columns: repeat(5,1fr);
+}
+nav>i{
+    color: #7f888f;
+    font-size: 1em;
+}
+
+hr{
+    color: #f56a6a;
+    border: #f56a6a 3px solid;
+    width: 100%;
+}
+
+/*.grid-container p{align=le
+    font-family: 'Times New Roman', Times, serif;
+    color: #879096;
+}*/
+
+p>b{
+    color: black;
+}
+
+.navegacion{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-content: end;
+    align-content: center;
+}
+
+/*css del cuerpo */
+.grid-cuerpo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.imagenfondo{
+    background-image: url(img/foto1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 500px;
+
+    border-radius: 20px;
+}
+
+/*boton*/
+.btn{
+    border: #f56a6a 3px solid;
+    background-color: white;
+    padding: 10px 2px;
+    border-radius: 15px;
+    width: 30%;
+}
+
+.btn>a{
+    color: #f56a6a;
+    text-decoration: none;
+    text-align: center;
+}
+
+div.btn:hover a{
+    color: aqua;
+}
+
+/*articulo*/
+article>h2{
+    font-size: 3em;
+}
+
+article>p{
+    color: #7f888f;
+    line-height: 1.3em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*lineas de separacion */
+#linea-gris{
+    margin-top: 3em;
+    color: #7f888f;
+    width: 100%;
+    border: #7f888f 1px solid;
+}
+
+#linea-roja-corta{
+    margin-top: 0.5em;
+    border: #f56a6a 3px solid;
+    width: 20%;
+}
+
+#titulo-footer{
+    font-family: sans-serif;
+    color: black;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+/********************************************************************************************************/
+/*grids del pie */
+.grid-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(200px,auto);
+}
+
+/*********** iconos del final ***********************************************************************/
+.grid-pie{
+    
+}
+
+.container-pie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
